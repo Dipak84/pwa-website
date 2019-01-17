@@ -9,7 +9,7 @@ import { MediaComponent } from './media/media.component';
 import { CareersComponent } from './careers/careers.component';
 import { ContactComponent } from './contact/contact.component'; 
 import { CoreModule } from './shared/core/core.module';
-import { CarouselModule } from 'ngx-bootstrap';
+//import { CarouselModule } from 'ngx-bootstrap';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 @NgModule({
@@ -26,7 +26,7 @@ import { environment } from '../environments/environment';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    CarouselModule.forRoot(),
+    //CarouselModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
